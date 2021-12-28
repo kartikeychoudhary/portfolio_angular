@@ -1,0 +1,25 @@
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">{{title}}</a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item" *ngFor="let item of navItems;">
+                    <a (click)="scrollToSection(item['href'])" class="nav__link active-link">
+                        <i class="{{item['icon']}}"></i> {{item['title']}}
+                    </a>
+                </li>
+            </ul>
+            <i class="uil uil-times nav__close" id="nav-close" (click)="closeMenu()"></i>
+        </div>
+
+        <div class="nav__btns">
+            <!--Theme change button-->
+            <i [ngClass]="toggle === 'light-theme' ? 'uil uil-moon change-theme':'uil uil-sun change-theme'" id="theme-button" (click)="toggleTheme()"></i>
+
+            <div class="nav__toggle" id="nav-toggle" >
+                <i class="uil uil-apps" (click)="openMenu()"></i>
+            </div>
+        </div>
+    </nav>
+</header>

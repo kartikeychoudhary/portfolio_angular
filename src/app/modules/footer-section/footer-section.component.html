@@ -1,0 +1,27 @@
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer__bg">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">{{footer['title']}}</h1>
+                <span class="footer__subtitle">{{footer['subtitle']}}</span>
+            </div>
+
+            <ul class="footer__links">
+                <li *ngFor="let link of footer['links'];">
+                    <a (click)="scrollToSection(link['href'])" class="footer__link">{{link['title']}}</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a *ngFor="let s of footer['social'];"
+                (click)="scrollToSection(s['href'])" class="footer__social" target="_blank"  class="footer__social">
+                    <i [class]="s['icon']"></i>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer__copy" [innerHtml]="footer['copyright']"></p>
+    </div>
+
+</footer>

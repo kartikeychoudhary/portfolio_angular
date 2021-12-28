@@ -1,0 +1,153 @@
+title: Kartikey Choudhary
+navItems:
+  - href: home
+    title: Home
+    icon: uil uil-estate nav__icon
+  - href: about
+    icon: uil uil-user nav__icon
+    title: About
+  - href: skills
+    icon: uil uil-file-alt nav__icon
+    title: Skills
+  - href: portfolio
+    icon: uil uil-scenery nav__icon
+    title: Portfolio
+  - href: contact
+    icon: uil uil-estate nav__icon
+    title: Contact Me
+socialItems:
+  - href: 'https://github.com/kartikeychoudhary'
+    icon: uil uil-github-alt
+  - href: 'https://instagram.com/kartikey31choudhary'
+    icon: uil uil-instagram
+  - href: 'https://www.linkedin.com/in/kartikeychoudhary/'
+    icon: uil uil-linkedin
+homeTitle: Hello from Kartikey
+homeSubtitle: Full-Stack Deveopr
+homeDescription: >-
+  High level experience in web application development and producing quality
+  work.
+prefilImageUrl: assets/pic.png
+aboutDescription: >-
+  Web developer, with extensive knowledge and years of experience, working in
+  web technologies and Ui/Ux design, delivering quality work.
+aboutInfo:
+  - title: 1.5+
+    name: 'Years <br> experience '
+  - title: 1.5+
+    name: 'Years <br> experience '
+aboutImg: assets/img/about.png
+aboutCV: assets/pdf/kartikeychoudhary_cv.pdf
+skills:
+  - title: Backend Development
+    subtitle: More then 1.5+ year experience
+    data:
+      - name: Java Spring Boot
+        number: 80%
+      - name: Java Spring Hibernate
+        number: 70%
+      - name: Java Spring MVC
+        number: 70%
+      - name: Python Flask
+        number: 60%
+  - title: Frontend Development
+    subtitle: More then 1.5+ year experience
+    data:
+      - name: Angular
+        number: 80%
+      - name: React
+        number: 70%
+      - name: Flutter
+        number: 60%
+      - name: Android Studios
+        number: 60%
+  - title: Familier Languages and Tools
+    subtitle: More then 1.5+ year experience
+    data:
+      - name: Java
+        number: 90%
+      - name: Python
+        number: 80%
+      - name: Git, Jira
+        number: 90%
+      - name: Bash
+        number: 80%
+qualifications:
+  titles:
+    - education
+    - work
+  education:
+    icon: uil uil-graduation-cap
+    data:
+      - title: Bachelore In Computer Science And Engineering
+        subtitle: 'Guru Jambheshwar University And Technology, Hisar-125001'
+        calender: 2016 - 2020
+        placement: left
+      - title: Post Matric
+        subtitle: 'Swami Vivekanand Public School, Huda Sec-17.'
+        calender: 2015 - 2016
+        placement: right
+      - title: Matric
+        subtitle: 'Swami Vivekanand Public School, Huda Sec-17.'
+        calender: 2014 - 2015
+        placement: end
+  work:
+    icon: uil uil-briefcase-alt
+    data:
+      - title: Software Engineer
+        subtitle: Xoriant Solutions Pvt. Lmt. Pune - 411057
+        calender: 'Nov, 2020 - Present'
+        placement: left
+      - title: Internship (IBM Delhi)
+        subtitle: >-
+          Worked on Project MediBook - Health Care Booking Using Android, Core
+          Java, Android Studios, XML, Google-Firebase for a duration of 6 weeks
+          at Allsoft Solutions & Service Pvt.Ltd.
+        calender: Jun 2018 - Aug 2018
+        placement: right
+      - title: 'Internship (NCAOR, Goa)'
+        subtitle: >-
+          Internship at Nation Center for Antarctica and Ocean Research, Goa.
+          Image processing using MATLAB to predict the Rate of melting of
+          glaciers in Antarctica. Data processed from year 2005-2016.
+        calender: Jun 2017 — Aug 2017
+        placement: end
+portfolio:
+  - img: assets/img/project1.jpg
+    alt: visualization of algorithms
+    title: visualization of algorithms
+    description: Webapp to demonstrate how algorithms works.
+    href: 'https://visualize.kartikeychoudhary.com/'
+    button: Demo
+  - img: assets/img/project2.jpg
+    alt: smartrocket
+    title: Smart Rocket
+    description: Rockets learns to reach a certain point with each iterations
+    href: 'https://rocket.kartikeychoudhary.com/'
+    button: Demo
+contact:
+  number: +91 967141 6759
+  email: kartikey31choudhary@gmail.com
+  location: 'hinjewadi 411057, pune'
+footer:
+  title: Kartikey Choudhary
+  subtitle: Full-Stack Deveopr
+  links:
+    - href: home
+      title: Home
+    - href: about
+      title: About
+    - href: skills
+      title: Skills
+    - href: portfolio
+      title: Portfolio
+    - href: contact
+      title: Contact Me
+  social:
+    - href: 'https://github.com/kartikeychoudhary'
+      icon: uil uil-github-alt
+    - href: 'https://instagram.com/kartikey31choudhary'
+      icon: uil uil-instagram
+    - href: 'https://www.linkedin.com/in/kartikeychoudhary/'
+      icon: uil uil-linkedin
+  copyright: '&#169, Kartikey Choudhary. All rights reserved'

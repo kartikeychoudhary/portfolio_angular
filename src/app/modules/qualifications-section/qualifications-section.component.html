@@ -1,0 +1,48 @@
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section">
+    <h2 class="section__title">Qualifications</h2>
+    <div class="section__subtitle">My personal journey</div>
+
+    <div class="qualification__container container" >
+        <div class="qualification__tabs">
+            <div  *ngFor="let title of qualifications['titles'];index as i" [ngClass]="i===active?'qualification__button button--flex qualification__active':'qualification__button button--flex'" [data-target]="'#'+title" (click)="onClickTitle(i)">
+                <i [class]="qualifications[title]['icon']+' qualification__icon'"></i>
+                {{title}}
+            </div>
+        </div>
+
+        <div class="qualification__sections">
+
+            <div *ngFor="let title of qualifications['titles'];index as i" [ngClass]="i===active?'qualification__content qualification__active':qualification__content" data-content [id]="title">
+
+                <div class="qualification__data" *ngFor="let dat of qualifications[title]['data']">
+
+                    <div *ngIf="dat['placement']==='right'"></div>
+                    <div *ngIf="dat['placement']==='right'">
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="qualification__title">{{dat['title']}}</h3>
+                        <span class="qualification__subtitle">{{dat['subtitle']}}</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            {{dat['calender']}}
+                        </div>
+                    </div>
+
+                    <div *ngIf="dat['placement']==='left'">
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+
+                    <div *ngIf="dat['placement']==='end'">
+                        <span class="qualification__rounder"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
