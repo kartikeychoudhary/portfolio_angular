@@ -17,6 +17,8 @@ import { ContactSectionComponent } from './modules/contact-section/contact-secti
 import { FooterSectionComponent } from './modules/footer-section/footer-section.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -38,7 +40,14 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     SwiperModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // enabled: true,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
     // Swiper
   ],
   providers: [],

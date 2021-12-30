@@ -5,7 +5,7 @@
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list grid">
                 <li class="nav__item" *ngFor="let item of navItems;">
-                    <a (click)="scrollToSection(item['href'])" class="nav__link active-link">
+                    <a (click)="scrollToSection(item['href'])" [id]="'id-'+item['href']" class="nav__link">
                         <i class="{{item['icon']}}"></i> {{item['title']}}
                     </a>
                 </li>

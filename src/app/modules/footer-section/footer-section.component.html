@@ -15,7 +15,7 @@
 
             <div class="footer__socials">
                 <a *ngFor="let s of footer['social'];"
-                (click)="scrollToSection(s['href'])" class="footer__social" target="_blank"  class="footer__social">
+               [href]="s['href']" class="footer__social" target="_blank"  class="footer__social">
                     <i [class]="s['icon']"></i>
                 </a>
             </div>

@@ -32,6 +32,12 @@ export class ContactSectionComponent implements OnInit {
       let message = this.formContact.get("message").value;
       let subject = this.formContact.get("subject").value;
 
+
+      let boolean = navigator.onLine;
+      if(!boolean){
+        this.messageService.showNotification("Connect to internet to contact.");
+        return;
+      }
       this.backendService.saveContact(name, email, message, subject).subscribe((res)=>{
         this.formContact.reset();
         this.messageService.showNotification("Submitted successfully. Thank You");

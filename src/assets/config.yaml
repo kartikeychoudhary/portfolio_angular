@@ -23,7 +23,7 @@ socialItems:
   - href: 'https://www.linkedin.com/in/kartikeychoudhary/'
     icon: uil uil-linkedin
 homeTitle: Hello from Kartikey
-homeSubtitle: Full-Stack Deveopr
+homeSubtitle: Full-Stack Developer
 homeDescription: >-
   High level experience in web application development and producing quality
   work.
@@ -32,10 +32,10 @@ aboutDescription: >-
   Web developer, with extensive knowledge and years of experience, working in
   web technologies and Ui/Ux design, delivering quality work.
 aboutInfo:
+  - title: 2+
+    name: 'Years <br> experience in Backend Development '
   - title: 1.5+
-    name: 'Years <br> experience '
-  - title: 1.5+
-    name: 'Years <br> experience '
+    name: 'Years <br> experience in Frontend Development'
 aboutImg: assets/img/about.png
 aboutCV: assets/pdf/kartikeychoudhary_cv.pdf
 skills:
@@ -113,13 +113,13 @@ qualifications:
         calender: Jun 2017 — Aug 2017
         placement: end
 portfolio:
-  - img: assets/img/project1.jpg
+  - img: assets/img/project1.png
     alt: visualization of algorithms
     title: visualization of algorithms
     description: Webapp to demonstrate how algorithms works.
     href: 'https://visualize.kartikeychoudhary.com/'
     button: Demo
-  - img: assets/img/project2.jpg
+  - img: assets/img/project2.png
     alt: smartrocket
     title: Smart Rocket
     description: Rockets learns to reach a certain point with each iterations
