@@ -73,9 +73,10 @@ skills:
       - name: Bash
         number: 80%
 qualifications:
+  list_start_symbol: '->'
   titles:
-    - education
     - work
+    - education
   education:
     icon: uil uil-graduation-cap
     data:
@@ -94,20 +95,39 @@ qualifications:
   work:
     icon: uil uil-briefcase-alt
     data:
-      - title: Software Engineer
-        subtitle: Xoriant Solutions Pvt. Lmt. Pune - 411057
-        calender: 'Nov, 2020 - Present'
+      - title: 'Software Engineer'
+        subtitle: 'At Xoriant Solutions Pvt. Lmt. Pune'
+        description: >-
+          ->Started working for Citi client as a Full Stack Developer,
+          involving tech stack - Spring, Oracle DB, Java Core, Angular, Ag-grid.
+          ->Designed, developed and demonstrated many modules which got published in
+          future releases, Got 2 more Spot Awards for my work.
+          ->Developed a system to parse PDF which automates client internal process, improving productivity.
+        calender: 'Nov, 2020 - Nov, 2021'
         placement: left
-      - title: Internship (IBM Delhi)
-        subtitle: >-
-          Worked on Project MediBook - Health Care Booking Using Android, Core
+      - title: 'Associate Software Engineer'
+        subtitle: 'At Xoriant Solutions Pvt. Lmt. Pune'
+        description: >-
+          ->Worked on internal projects as a Full Stack Developer, 
+          involving tech stack - Spring, Java Core, Angular, JWT, SSO.
+          Developing modules from scratch, Demonstrating, getting feedback
+          implementing changes and Deployment.
+          ->Got 2 Spot awards for outstanding performance.
+          ->Delivered 5 modules end to end.
+        calender: 'Nov, 2020 - Nov, 2021'
+        placement: left
+      - title: 'Intern'
+        subtitle: 'At IBM Pune'
+        description: >-
+          ->Worked on Project MediBook - Health Care Booking Using Android, Core
           Java, Android Studios, XML, Google-Firebase for a duration of 6 weeks
           at Allsoft Solutions & Service Pvt.Ltd.
         calender: Jun 2018 - Aug 2018
         placement: right
-      - title: 'Internship (NCAOR, Goa)'
-        subtitle: >-
-          Internship at Nation Center for Antarctica and Ocean Research, Goa.
+      - title: 'Intern'
+        subtitle: 'N.C.A.O.R, Goa'
+        description: >-
+          ->Internship at Nation Center for Antarctica and Ocean Research, Goa.
           Image processing using MATLAB to predict the Rate of melting of
           glaciers in Antarctica. Data processed from year 2005-2016.
         calender: Jun 2017 — Aug 2017
@@ -131,7 +151,7 @@ contact:
   location: 'hinjewadi 411057, pune'
 footer:
   title: Kartikey Choudhary
-  subtitle: Full-Stack Deveopr
+  subtitle: Full-Stack Developer
   links:
     - href: home
       title: Home

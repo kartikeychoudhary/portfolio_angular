@@ -35,6 +35,7 @@
     --smaller-font-size: .75rem;
 
     /*========== Font weight ==========*/
+    --font-normal: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
 
@@ -604,14 +605,24 @@ img{
 }
 
 .qualification__title{
-    font-size: var(--normal-font-size);
+    font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
 
 .qualification__subtitle{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-normal);
+    font-style: italic;
+}
+
+.qualification__description{
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
+}
+
+.qualification__description ul{
+    list-style: disc;
 }
 
 .qualification__calendar{
@@ -1093,7 +1104,7 @@ img{
 
     .qualification__sections{
         display: grid;
-        grid-template-columns: .6fr;
+        grid-template-columns: .8fr;
         justify-content: center;
     }
 
@@ -1188,7 +1199,7 @@ img{
         margin: 0 var(--mb-1);
     }
     .qualification__sections{
-        grid-template-columns: .5fr;
+        grid-template-columns: 1fr;
     }
 
     .services__container{

@@ -1,7 +1,9 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import SwiperCore, { SwiperOptions } from 'swiper';
+import { SwiperOptions } from 'swiper';
+import SwiperCore, { Virtual } from 'swiper';
 import { SwiperComponent } from 'swiper/angular';
 
+SwiperCore.use([Virtual]);
 @Component({
   selector: 'app-portfolio-section',
   templateUrl: './portfolio-section.component.html',

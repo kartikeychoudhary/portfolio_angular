@@ -25,11 +25,14 @@
 
                     <div>
                         <h3 class="qualification__title">{{dat['title']}}</h3>
-                        <span class="qualification__subtitle">{{dat['subtitle']}}</span>
+                        <h4 class="qualification__subtitle">{{dat['subtitle']}}</h4>
                         <div class="qualification__calendar">
                             <i class="uil uil-calendar-alt"></i>
                             {{dat['calender']}}
                         </div>
+                        <span class="qualification__description" *ngIf="!(dat['description'] && dat['description'].includes(this.symbol))">{{dat['description']}}</span>
+                        <span class="qualification__description" *ngIf="dat['description'] && dat['description'].includes(this.symbol)" [innerHtml]="decodeDescription(dat['description'])"></span>
+                        
                     </div>
 
                     <div *ngIf="dat['placement']==='left'">

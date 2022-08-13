@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import 'swiper/swiper.min.css'
+// import 'swiper/less';
 
 @Component({
   selector: 'app-root',

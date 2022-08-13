@@ -7,13 +7,22 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class QualificationsSectionComponent implements OnInit {
 
-  @Input() qualifications;
-
+  @Input() qualifications;  
+  symbol;
   active=0;
 
-  constructor() { }
+  constructor() {
+    
+   }
+
+  decodeDescription(description){
+    description=description.replaceAll(this.symbol, "</li><li>");
+    description=description.substring(5);
+    return `<ul>${description}</li></ul>`
+  }
 
   ngOnInit(): void {
+    this.symbol = this.qualifications['list_start_symbol'];
   }
 
   onClickTitle(selected){

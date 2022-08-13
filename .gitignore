@@ -9,6 +9,9 @@
 
 # dependencies
 /node_modules
+/.angular
+/.vscode
+/.e2e
 
 # profiling files
 chrome-profiler-events*.json
