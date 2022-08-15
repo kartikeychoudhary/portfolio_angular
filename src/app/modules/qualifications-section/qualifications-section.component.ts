@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-qualifications-section',
@@ -10,8 +10,11 @@ export class QualificationsSectionComponent implements OnInit {
   @Input() qualifications;  
   symbol;
   active=0;
+  smallScreenWidth=318;
+  @ViewChild('qualification__container') container : ElementRef;
 
-  constructor() {
+
+  constructor(private cdr:ChangeDetectorRef) {
     
    }
 
@@ -23,6 +26,20 @@ export class QualificationsSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.symbol = this.qualifications['list_start_symbol'];
+    
+  }
+
+  ngAfterViewInit() {
+    // console.log(this.container)
+    if(this.container.nativeElement.offsetWidth<=this.smallScreenWidth){
+      this.qualifications['titles'].forEach(title => {
+        this.qualifications[title]["data"].forEach((item, index) => {
+          this.qualifications[title]["data"][index]["placement"]="left";
+        });
+      });
+      this.cdr.detectChanges();
+      console.log(this.qualifications)
+    }
   }
 
   onClickTitle(selected){

@@ -662,6 +662,9 @@ img{
     border-bottom: 3px solid var(--first-color-alt);
     border-radius: .2rem;
 }
+
+
+
 /*==================== SERVICES ====================*/
 .services__container{
     gap: 1.5rem;
@@ -1046,6 +1049,7 @@ img{
     }
 
     .qualification__data{
+        grid-template-columns: 1fr max-content 0.1fr;
         gap: .5rem;
     }
 
@@ -1063,23 +1067,11 @@ img{
     .project__img{
         width: 200px;
     }
-/*============= This is not implemented now ===============*/
-    /*.testimonial__data,*/
-    /*.testimonial__header{*/
-    /*    flex-direction: column;*/
-    /*    align-items: center;*/
-    /*}*/
 
-    /*.testimonial__img{*/
-    /*    margin-right: 0;*/
-    /*    margin-bottom: var(--mb-0-25);*/
-    /*}*/
-
-    /*.testimonial__data,*/
-    /*.testimonial__description{*/
-    /*    text-align: center;*/
-    /*}*/
-
+    .section{
+        padding: 2rem 0 4rem 0.5rem;
+    }
+   
 }
 
 /* For medium devices */
@@ -1107,8 +1099,6 @@ img{
         grid-template-columns: .8fr;
         justify-content: center;
     }
-
-
 }
 
 @media screen and (min-width: 768px) {

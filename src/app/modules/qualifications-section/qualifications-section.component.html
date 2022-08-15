@@ -3,7 +3,7 @@
     <h2 class="section__title">Qualifications</h2>
     <div class="section__subtitle">My personal journey</div>
 
-    <div class="qualification__container container" >
+    <div class="qualification__container container" #qualification__container>
         <div class="qualification__tabs">
             <div  *ngFor="let title of qualifications['titles'];index as i" [ngClass]="i===active?'qualification__button button--flex qualification__active':'qualification__button button--flex'" [data-target]="'#'+title" (click)="onClickTitle(i)">
                 <i [class]="qualifications[title]['icon']+' qualification__icon'"></i>
